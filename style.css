@@ -24,6 +24,7 @@ button{
     cursor: pointer;
 }
 header .cart-items{
+    visibility: hidden;
     position: absolute;
     right: 2rem;
     top: 10%;
