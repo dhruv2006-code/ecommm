@@ -23,6 +23,27 @@ main{
 button{
     cursor: pointer;
 }
+header .cart-items{
+    position: absolute;
+    right: 2rem;
+    top: 10%;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 12px;
+    background-color: rgba(245, 245, 245, 0.806);
+}
+header .cart-items img{
+    height: 50px;
+    background-color: rgb(255, 81, 0);
+    padding: 5px;
+    border-radius: 12px;
+}
+header .cart-items .product-info{
+    display: flex;
+    flex-direction: column;
+}
 nav{
     display: flex;
     align-items: center;
