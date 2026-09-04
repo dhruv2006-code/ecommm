@@ -44,7 +44,13 @@ cartItems.innerHTML = clutter;
 })
 }
 document.querySelector('.look').addEventListener('click',function(){
-
+if(cartProducts.some(function(product){
+    return product.image === currentProduct.image;
+})){
+    
+}else{
 cartProducts.push(currentProduct);
+}
+
 cartRender();
 })
