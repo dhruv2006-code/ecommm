@@ -45,3 +45,16 @@ cartProducts.push(currentProduct);
 
 cartRender();
 })
+let switchImage = ["./product2.png","./product3.png","./product4.png","./product5.png"];
+function imgSwitch(){
+    let smallImg = document.querySelector('#small-img');
+    smallImg.addEventListener('click',function(){
+    MainImg.src.innerHTML = switchImage;
+    console.log(MainImg);
+    console.log(switchImage);
+    
+       
+    })
+
+}
+imgSwitch();
