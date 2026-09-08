@@ -28,29 +28,20 @@ cart.addEventListener('click',function(){
 })
 let currentProduct = productImg[0];
 let cartProducts = [];
-let clutter = '';
 function cartRender(){
-cartProducts.forEach(function(ProductRender){
-
- clutter += `<img src="${ProductRender.image}" alt="">
-            <div class="product-info">
-            <h4>${ProductRender.name}</h4>
-            <h3>${ProductRender.price}</h3>
-            </div>`
-
-
-cartItems.innerHTML = clutter;
-
-})
+    let clutter = "";
+    cartProducts.forEach(function(ProductRender){
+        clutter += `<img src="${ProductRender.image}" alt="">
+                    <div class="product-info">
+                        <h4>${ProductRender.name}</h4>
+                        <h3>${ProductRender.price}</h3>
+                    </div>`;
+    });
+    cartItems.innerHTML = clutter;
 }
 document.querySelector('.look').addEventListener('click',function(){
-if(cartProducts.some(function(product){
-    return product.image === currentProduct.image;
-})){
-    
-}else{
+
 cartProducts.push(currentProduct);
-}
 
 cartRender();
 })
