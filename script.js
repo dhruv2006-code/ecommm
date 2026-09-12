@@ -3,21 +3,25 @@ let productImg = [
         name:"Black Buffer",
         image:"./product2.png",
         price:"$100",
+        fakePrice:'$299'
     },
      {
-         name:"Black Buffer",
+         name:"Leather",
         image:"./product3.png",
-        price:"$100",
+        price:"$59",
+          fakePrice:'$99'
     },
      {
-     name:"Black Buffer",
+     name:"Old Money Coat",
         image:"./product4.png",
-        price:"$100",
+        price:"$36",
+          fakePrice:'$86'
     },
      {
-         name:"Black Buffer",
+         name:"Army Jacket",
         image:"./product5.png",
-        price:"$100",
+        price:"$50",
+          fakePrice:'$70'
     },
 ]
 let cartItems = document.querySelector('.cart-items')
@@ -26,7 +30,7 @@ let MainImg = document.querySelector('#MainImg');
 cart.addEventListener('click',function(){
     cartItems.style.visibility = "visible";
 })
-let currentProduct = productImg[0];
+let currentProduct = productImg[2];
 let cartProducts = [];
 function cartRender(){
     let clutter = "";
@@ -39,6 +43,8 @@ function cartRender(){
     });
     cartItems.innerHTML = clutter;
 }
+document.querySelector('#price').textContent = productImg[0].price;
+
 document.querySelector('.look').addEventListener('click',function(){
 
 cartProducts.push(currentProduct);
@@ -51,9 +57,7 @@ function imgSwitch(){
     smallImg.addEventListener('click',function(){
     MainImg.src = switchImage[0];
     console.log(MainImg);
-    console.log(switchImage);
-    
-       
+    console.log(switchImage);       
     })
 
 }
