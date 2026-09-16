@@ -154,12 +154,26 @@ width: 70%;
 .main-line .look:active{
     scale: 0.90;
 }
+.show-footer{
+    padding: 12px 12px;
+    color: black;
+    border-radius: 21px;
+    border: 1px solid black;
+    position: absolute;
+    left: 45%;
+}
+.show{
+    display: none;
+
+}
 footer{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 footer img{
+    visibility: hidden;
     border-radius: 50%;
     height: 100px;
     width: 130px;

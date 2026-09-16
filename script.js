@@ -51,15 +51,19 @@ cartProducts.push(currentProduct);
 
 cartRender();
 })
-let footerImage1
+    let footer = document.querySelector('footer');
 function imgRender(){
-    let footer = document.querySelector('footer')
     footer.addEventListener('click',function(dets){
      let imgShow = dets.target;
-     console.log(imgShow);
      MainImg.src = imgShow.src;
-           
-        
     })    
 }
+function footerShow(){
+    let footerBtn = document.querySelector(".show-footer");
+    footerBtn.addEventListener('click',function(){
+        footer.classList.toggle('show')
+        
+    })
+}
+footerShow();
 imgRender();
