@@ -159,7 +159,6 @@ width: 70%;
     color: black;
     border-radius: 21px;
     border: 1px solid black;
-    position: absolute;
     left: 45%;
 }
 .show{
@@ -167,13 +166,13 @@ width: 70%;
 
 }
 footer{
-    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 footer img{
-    visibility: hidden;
+
     border-radius: 50%;
     height: 100px;
     width: 130px;
