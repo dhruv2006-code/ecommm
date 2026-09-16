@@ -61,8 +61,7 @@ function imgRender(){
 function footerShow(){
     let footerBtn = document.querySelector(".show-footer");
     footerBtn.addEventListener('click',function(){
-        footer.classList.toggle('show')
-        
+        footer.classList.toggle('show');
     })
 }
 footerShow();
