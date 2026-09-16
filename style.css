@@ -160,7 +160,9 @@ footer{
     justify-content: space-between;
 }
 footer img{
-    height: 110px;
+    border-radius: 50%;
+    height: 100px;
+    width: 130px;
     cursor: pointer;
-    box-shadow: 1px 1px 0px greenyellow;
+    box-shadow: 1px 1px 10px white;
 }

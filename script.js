@@ -1,6 +1,6 @@
 let productImg = [
     {
-        name:"Black Buffer",
+        name:"Blue Buffer",
         image:"./product2.png",
         price:"$100",
         fakePrice:'$299'
@@ -51,14 +51,15 @@ cartProducts.push(currentProduct);
 
 cartRender();
 })
-let switchImage = ["./product2.png","./product3.png","./product4.png","./product5.png"];
-function imgSwitch(){
-    let smallImg = document.querySelector('#small-img');
-    smallImg.addEventListener('click',function(){
-    MainImg.src = switchImage[0];
-    console.log(MainImg);
-    console.log(switchImage);       
-    })
-
+let footerImage1
+function imgRender(){
+    let footer = document.querySelector('footer')
+    footer.addEventListener('click',function(dets){
+     let imgShow = dets.target;
+     console.log(imgShow);
+     MainImg.src = imgShow.src;
+           
+        
+    })    
 }
-imgSwitch();
+imgRender();
