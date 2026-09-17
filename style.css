@@ -158,15 +158,17 @@ width: 70%;
     padding: 12px 12px;
     color: black;
     border-radius: 21px;
-    border: 1px solid black;
+    border: none;
+    background-color: rgb(254, 110, 0);
     left: 45%;
+    font-weight: 600;
 }
 .show{
     display: none;
 
 }
 footer{
-
+    visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
