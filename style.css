@@ -162,23 +162,30 @@ width: 70%;
     border-radius: 21px;
     border: none;
     background-color: rgb(254, 110, 0);
-    left: 45%;
     font-weight: 600;
 }
 .show{
     display: none;
 }
 footer{
-    visibility: hidden;
+    margin-top: -5%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 footer img{
-
     border-radius: 50%;
-    height: 100px;
+    height: 110px;
     width: 130px;
     cursor: pointer;
-    box-shadow: 1px 1px 10px white;
+    animation: slideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slideUp{
+    from{
+        transform: translate(10px,10px);
+    }
+    to{
+        transform: translateX(-10px);
+        transform: translateY(-10px);
+    }
 }
